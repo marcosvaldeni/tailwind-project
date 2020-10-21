@@ -6,21 +6,29 @@
   <title>Tailwind</title>
   <link rel="stylesheet" href="build/tailwind.css">
 </head>
-<body class="bg-gray-100">
-  <div class="p-8 py-12">
-    <img class="h-10" src="img/logo.svg" alt="">
-    <img class="mt-6 rounded-lg shadow-xl" src="img/beach.jpg" alt="">
-    <h1 class="mt-6 text-3xl text-gray-800 font-bold leading-tight">
-      Lorem ipsum dolor sit amet consectetur. <span class="text-indigo-500">Adipisicing elit.</span>
-    </h1>
-    <p class="mt-2 text-gray-600">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, ad? Distinctio unde, dicta libero amet quas voluptates aspernatur a. Exercitationem eligendi, et deleniti autem delectus modi natus repellendus veritatis distinctio?
-    </p>
-
-    <div class="mt-4">
-      <a class="inline-block bg-indigo-400 text-sm text-white px-4 py-3 rounded-lg shadow-lg uppercase tracking-wider font-semibold" href="#">Book your scape!</a>
-    </div>
+<body class="bg-gray-300">
+  <div class="bg-gray-100 flex">
+    <div class="p-8 py-12 max-w-wd mx-auto sm:max-w-xl lg:max-w-full lg:w-1/2 lg:py-24 lg:px-12">
+      <div class="xl:max-w-lg xl:ml-auto">
+        <img class="h-10" src="img/logo.svg" alt="">
+        <img class="mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-64 sm:w-full sm:object-cover sm:object-center lg:hidden" src="img/beach.jpg" alt="">
+        <h1 class="mt-6 text-3xl text-gray-800 font-bold leading-tight sm:mt-8 sm:text-4xl lg:text-3xl xl:text-4xl">
+          Lorem ipsum dolor sit amet consectetur. <br class="hidden lg:inline"><span class="text-indigo-500">Adipisicing elit.</span>
+        </h1>
+        <p class="mt-2 text-gray-600 sm:mt-4 sm:text-xl">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, ad? Distinctio unde, dicta libero amet quas voluptates aspernatur a. Exercitationem eligendi, et deleniti autem delectus modi natus repellendus veritatis distinctio?
+        </p>
     
+        <div class="mt-4 sm:mt-6">
+          <a class="inline-block bg-indigo-400 text-sm text-white px-4 py-3 rounded-lg shadow-lg uppercase tracking-wider font-semibold sm:text-base" href="#">Book your scape!</a>
+        </div>
+      </div>
+      
+    </div>
+    <div class="hidden lg:block lg:w-1/2 lg:relative">
+      <img class="absolute inset-0 h-full w-full object-cover object-center" 
+        src="img/beach.jpg" alt="">
+    </div>
   </div>
 </body>
 </html>
